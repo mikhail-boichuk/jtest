@@ -1,13 +1,15 @@
 node('LR_NODE') {
 
 def testData = pwd()+"\\testData"
-def sc1Path = testData + "\\Jenkins_scenario1.lrs"
-def sc2Path = testData + "\\Jenkins_scenario2.lrs"
+def sc1Path
+def sc2Path
 
 stage('Checkout test data'){
     dir (testData) {
 		checkout scm
-		echo testData
+		sc1Path = testData + "\\Jenkins_scenario1.lrs"
+		sc2Path = testData + "\\Jenkins_scenario2.lrs"
+		echo "Test data dir : " + testData + "\nScenario 1 dir: " + sc1Path + "\nScenario 2 dir: " + sc2Path
 	}
 }
 
