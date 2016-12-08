@@ -1,8 +1,8 @@
 node('LR_NODE') {
 
-def workspace;
+def workspace
 
-stage('Checkout the test sources'){
+stage('Checkout test sources'){
     	checkout scm
 		workspace = pwd()
 		echo workspace
