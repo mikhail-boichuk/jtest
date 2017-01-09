@@ -1,7 +1,7 @@
 
 {Product
 Product=HP LoadRunner Controller
-Version=14.0.0.0
+Version=12.53.0.0
 }
 
 {ScenarioGeneralConfig
@@ -14,7 +14,7 @@ GlobalDir=
 }
 
 {ScenarioPrivateConfig
-Path=C:\test\tests\Jenkins_scenario2.lrs
+Path=C:\git_repo_test\jtest\Jenkins_scenario2.lrs
 Author=mboychuk
 Subject=Jenkins_scenario1
 Description=
@@ -22,10 +22,10 @@ Hosts=1
 Scripts=3
 Groups=3
 Vusers=21
-Tranzactions=15
+Tranzactions=0
 Rendezvous=0
 Result_file=C:\Users\mboychuk\AppData\Local\Temp\res\res.lrr
-ResCleanName=
+ResCleanName=res
 ResSymName=
 DEFAULT_NFS_LESS_MODE=1
 AutoSetResults=0
@@ -36,6 +36,12 @@ PlannedNumOfVusers=12
 PrivatePlannedNumOfVusers=12
 ManualControlDistributionType=-1
 ManualControlAutoAddVusers=1
+Tranzactions=15
+Vusers=21
+Groups=3
+Rendezvous=0
+Scripts=3
+Hosts=1
 TestDirPath=
 TestDirServer=
 TestDirDatabase=
@@ -50,7 +56,7 @@ ScenarioStartAtTime=30779
 ScenarioStartAtTimeYear=2016
 ScenarioStartAtTimeMonth=6
 ScenarioStartAtTimeDay=9
-GIndexSortType=32244002423140
+GIndexSortType=13344223434042
 GIndexAutoSort=0
 SoftKillMode=0
 }
@@ -140,7 +146,7 @@ VuQuitTO=120
 80:HostUnixDefaultShell=csh
 81:HostUnixShellCommand=
 91:HostInitQuota=50
-93:ScenarioTestType=0
+93:ScenarioTestType=2
 94:OverrideRdpFile=0
 95:UserRemoteTmpDir=
 96:DontSendDATFile=0
@@ -187,7 +193,8 @@ SubType=RTE
 ScriptType=9
 Path=.\scripts\wait_text_test\wait_text_test.usr
 EmulatedLocation=None
-Config=[WEB]\r\nSnapshotOnErrorActive="0"\r\n[Log]\r\nMsgClassParameters="0"\r\nLogOptions="LogBrief"\r\nAutoLogBufferSize="1"\r\nIncludeEnvInfo="1"\r\nPrintTimeStamp="0"\r\nMsgClassFull="0"\r\nAutoLog=1\r\nMsgClassData="0"\r\nLogDetail="0"\r\n[General]\r\nAutomaticTransactions="1"\r\nContinueOnError="1"\r\nXlBridgeTimeout="120"\r\nUseThreads="1"\r\nDefaultRunLogic="usp2iq.175"\r\nAutomaticTransactionsPerFunc="0"\r\nFailTransOnErrorMsg="0"\r\nReplay64bit="0"\r\n[Iterations]\r\nRandomMax="90"\r\nRandomMin="60"\r\nIterationPace="IterationASAP"\r\nStartEvery="60"\r\nNumOfIterations="1"\r\n[RTE]\r\nRteCharSet="ANSI"\r\n[ThinkTime]\r\nOptions="RECORDED"\r\nFactor="1"\r\nThinkTimeRandomLow="50"\r\nThinkTimeRandomHigh="150"\r\nLimit="1"\r\nLimitFlag="0"\r\n
+NVAnalytics=0
+Config=[WEB]\r\nSnapshotOnErrorActive="0"\r\n[Log]\r\nMsgClassParameters="0"\r\nLogOptions="LogBrief"\r\nAutoLogBufferSize="1"\r\nIncludeEnvInfo="1"\r\nPrintTimeStamp="0"\r\nMsgClassFull="0"\r\nAutoLog=1\r\nMsgClassData="0"\r\nLogDetail="0"\r\n[General]\r\nAutomaticTransactions="1"\r\nContinueOnError="1"\r\nXlBridgeTimeout="120"\r\nUseThreads="1"\r\nDefaultRunLogic=uspdJr.653\r\nAutomaticTransactionsPerFunc="0"\r\nFailTransOnErrorMsg="0"\r\nReplay64bit="0"\r\n[Iterations]\r\nRandomMax="90"\r\nRandomMin="60"\r\nIterationPace="IterationASAP"\r\nStartEvery="60"\r\nNumOfIterations="1"\r\n[RTE]\r\nRteCharSet="ANSI"\r\n[ThinkTime]\r\nOptions="RECORDED"\r\nFactor="1"\r\nThinkTimeRandomLow="50"\r\nThinkTimeRandomHigh="150"\r\nLimit="1"\r\nLimitFlag="0"\r\n
 ConfigUsp=[Profile Actions]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="Profile Actions"\r\nProfile Actions name=vuser_init,Action1,vuser_end\r\n[RunLogicEndRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicEndRoot"\r\nMercIniTreeSons="vuser_end"\r\nName="End"\r\nRunLogicActionOrder="vuser_end"\r\nRunLogicActionType="VuserEnd"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicEndRoot:vuser_end]\r\nMercIniTreeFather="RunLogicEndRoot"\r\nMercIniTreeSectionName="vuser_end"\r\nName="vuser_end"\r\nRunLogicActionType="VuserEnd"\r\nRunLogicObjectKind="Action"\r\n[RunLogicInitRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicInitRoot"\r\nMercIniTreeSons="vuser_init"\r\nName="Init"\r\nRunLogicActionOrder="vuser_init"\r\nRunLogicActionType="VuserInit"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicInitRoot:vuser_init]\r\nMercIniTreeFather="RunLogicInitRoot"\r\nMercIniTreeSectionName="vuser_init"\r\nName="vuser_init"\r\nRunLogicActionType="VuserInit"\r\nRunLogicObjectKind="Action"\r\n[RunLogicRunRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicRunRoot"\r\nMercIniTreeSons="Action1"\r\nName="Run"\r\nRunLogicActionOrder="Action1"\r\nRunLogicActionType="VuserRun"\r\nRunLogicNumOfIterations="5"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicRunRoot:Action1]\r\nMercIniTreeFather="RunLogicRunRoot"\r\nMercIniTreeSectionName="Action1"\r\nName="Action1"\r\nRunLogicActionType="VuserRun"\r\nRunLogicObjectKind="Action"\r\n
 Param=
 TDPath=
@@ -207,7 +214,8 @@ SubType=Multi+QTWeb
 ScriptType=9
 Path=.\scripts\kalimanjaro\kalimanjaro.usr
 EmulatedLocation=None
-Config=[WEB]\r\nStartRecordingIsDst="1"\r\nScreenAvailWidth="1716"\r\nUseBrowserAgent="0"\r\nNavigatorBrowserLanguage="en-US"\r\nUTF8InputOutput="0"\r\nNavigatorUserLanguage="en-US"\r\nRecorderWinCodePage="1252"\r\nUseCustomAgent="1"\r\nLogFileWriteTraceToFile="0"\r\nProxyUseBrowser="0"\r\nProxyAutoConfigScriptURL=""\r\nProxyPassword=""\r\nLogFileWrite="0"\r\nSaveSnapshotResources=0\r\nSearchForImages="1"\r\nProxyUseProxyServer="0"\r\nHttpVer="1.1"\r\nProxyUseProxy="0"\r\nAnalogMode="0"\r\nResetContext="True"\r\nStartRecordingGMT="2016/06/09 15:22:49"\r\nProxyUseAutoConfigScript="0"\r\nProxyUseSame="1"\r\nUserHomePage="http://go.microsoft.com/fwlink/p/?LinkId=255141"\r\nScreenWidth="1716"\r\nScreenAvailHeight="861"\r\nBrowserAcceptLanguage="en-US"\r\nProxyHTTPSHost=""\r\nBrowserType="Microsoft Internet Explorer 4.0"\r\nProxyNoLocal="0"\r\nProxyHTTPHost=""\r\nNavigatorSystemLanguage="en-US"\r\nEnableChecks="0"\r\nProxyHTTPPort="443"\r\nWebRecorderVersion="10"\r\nSupportCharset="None"\r\nBrowserAcceptEncoding="gzip, deflate"\r\nUseDataFormatExtensions="FALSE"\r\nProxyBypass=""\r\nKeepAlive="Yes"\r\nProxyUserName=""\r\nProxyHTTPSPort="443"\r\nMaxConnections="0"\r\nScreenHeight="901"\r\nCustomUserAgent="Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; Touch; rv:11.0) like Gecko"\r\n[Log]\r\nMsgClassParameters="0"\r\nMsgClassData="0"\r\nLogOptions="LogBrief"\r\nMsgClassFull="0"\r\nAutoLog=1\r\n[General]\r\nXlBridgeTimeout="120"\r\nDefaultRunLogic="uspFMk.181"\r\nAutomaticTransactions="1"\r\nautomatic_nested_transactions="1"\r\n[Iterations]\r\nRandomMax="90"\r\nRandomMin="60"\r\nIterationPace="IterationASAP"\r\nStartEvery="60"\r\nNumOfIterations="1"\r\n[ThinkTime]\r\nOptions=RECORDED\r\nFactor="1"\r\nLimit="1"\r\nLimitFlag="0"\r\n
+NVAnalytics=0
+Config=[WEB]\r\nStartRecordingIsDst="1"\r\nScreenAvailWidth="1716"\r\nUseBrowserAgent="0"\r\nNavigatorBrowserLanguage="en-US"\r\nUTF8InputOutput="0"\r\nNavigatorUserLanguage="en-US"\r\nRecorderWinCodePage="1252"\r\nUseCustomAgent="1"\r\nLogFileWriteTraceToFile="0"\r\nProxyUseBrowser="0"\r\nProxyAutoConfigScriptURL=""\r\nProxyPassword=""\r\nLogFileWrite="0"\r\nSaveSnapshotResources=0\r\nSearchForImages="1"\r\nProxyUseProxyServer="0"\r\nHttpVer="1.1"\r\nProxyUseProxy="0"\r\nAnalogMode="0"\r\nResetContext="True"\r\nStartRecordingGMT="2016/06/09 15:22:49"\r\nProxyUseAutoConfigScript="0"\r\nProxyUseSame="1"\r\nUserHomePage="http://go.microsoft.com/fwlink/p/?LinkId=255141"\r\nScreenWidth="1716"\r\nScreenAvailHeight="861"\r\nBrowserAcceptLanguage="en-US"\r\nProxyHTTPSHost=""\r\nBrowserType="Microsoft Internet Explorer 4.0"\r\nProxyNoLocal="0"\r\nProxyHTTPHost=""\r\nNavigatorSystemLanguage="en-US"\r\nEnableChecks="0"\r\nProxyHTTPPort="443"\r\nWebRecorderVersion="10"\r\nSupportCharset="None"\r\nBrowserAcceptEncoding="gzip, deflate"\r\nUseDataFormatExtensions="FALSE"\r\nProxyBypass=""\r\nKeepAlive="Yes"\r\nProxyUserName=""\r\nProxyHTTPSPort="443"\r\nMaxConnections="0"\r\nScreenHeight="901"\r\nCustomUserAgent="Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; Touch; rv:11.0) like Gecko"\r\n[Log]\r\nMsgClassParameters="0"\r\nMsgClassData="0"\r\nLogOptions="LogBrief"\r\nMsgClassFull="0"\r\nAutoLog=1\r\n[General]\r\nXlBridgeTimeout="120"\r\nDefaultRunLogic=uspYZZ.655\r\nAutomaticTransactions="1"\r\nautomatic_nested_transactions="1"\r\n[Iterations]\r\nRandomMax="90"\r\nRandomMin="60"\r\nIterationPace="IterationASAP"\r\nStartEvery="60"\r\nNumOfIterations="1"\r\n[ThinkTime]\r\nOptions=RECORDED\r\nFactor="1"\r\nLimit="1"\r\nLimitFlag="0"\r\n
 ConfigUsp=[Profile Actions]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="Profile Actions"\r\nProfile Actions name=vuser_init,Action,vuser_end\r\n[RunLogicEndRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicEndRoot"\r\nMercIniTreeSons="vuser_end"\r\nName="End"\r\nRunLogicActionOrder="vuser_end"\r\nRunLogicActionType="VuserEnd"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicEndRoot:vuser_end]\r\nMercIniTreeFather="RunLogicEndRoot"\r\nMercIniTreeSectionName="vuser_end"\r\nName="vuser_end"\r\nRunLogicActionType="VuserEnd"\r\nRunLogicObjectKind="Action"\r\n[RunLogicErrorHandlerRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicErrorHandlerRoot"\r\nMercIniTreeSons="vuser_errorhandler"\r\nName="ErrorHandler"\r\nRunLogicActionOrder="vuser_errorhandler"\r\nRunLogicActionType="VuserErrorHandler"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicErrorHandlerRoot:vuser_errorhandler]\r\nMercIniTreeFather="RunLogicErrorHandlerRoot"\r\nMercIniTreeSectionName="vuser_errorhandler"\r\nName="vuser_errorhandler"\r\nRunLogicActionType="VuserErrorHandler"\r\nRunLogicObjectKind="Action"\r\n[RunLogicInitRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicInitRoot"\r\nMercIniTreeSons="vuser_init"\r\nName="Init"\r\nRunLogicActionOrder="vuser_init"\r\nRunLogicActionType="VuserInit"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicInitRoot:vuser_init]\r\nMercIniTreeFather="RunLogicInitRoot"\r\nMercIniTreeSectionName="vuser_init"\r\nName="vuser_init"\r\nRunLogicActionType="VuserInit"\r\nRunLogicObjectKind="Action"\r\n[RunLogicRunRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicRunRoot"\r\nMercIniTreeSons="Action"\r\nName="Run"\r\nRunLogicActionOrder="Action"\r\nRunLogicActionType="VuserRun"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicRunRoot:Action]\r\nMercIniTreeFather="RunLogicRunRoot"\r\nMercIniTreeSectionName="Action"\r\nName="Action"\r\nRunLogicActionType="VuserRun"\r\nRunLogicObjectKind="Action"\r\n
 Param=
 TDPath=
@@ -228,7 +236,8 @@ SubType=General
 ScriptType=9
 Path=.\scripts\different_operations\different_operations.usr
 EmulatedLocation=None
-Config=[WEB]\r\nSnapshotOnErrorActive="0"\r\n[Log]\r\nMsgClassParameters="0"\r\nMsgClassData="0"\r\nLogOptions="LogBrief"\r\nMsgClassFull="0"\r\nAutoLog=1\r\n[General]\r\nAutomaticTransactions="1"\r\nContinueOnError="0"\r\nXlBridgeTimeout="120"\r\nUseThreads="1"\r\nDefaultRunLogic="uspF0z.173"\r\nAutomaticTransactionsPerFunc="0"\r\nFailTransOnErrorMsg="0"\r\nReplay64bit="0"\r\n[Iterations]\r\nRandomMax="90"\r\nRandomMin="60"\r\nIterationPace="IterationASAP"\r\nStartEvery="60"\r\nNumOfIterations="1"\r\n[ThinkTime]\r\nOptions=RECORDED\r\nFactor="1"\r\nThinkTimeRandomLow="50"\r\nThinkTimeRandomHigh="150"\r\nLimit="1"\r\nLimitFlag="0"\r\n
+NVAnalytics=0
+Config=[WEB]\r\nSnapshotOnErrorActive="0"\r\n[Log]\r\nMsgClassParameters="0"\r\nMsgClassData="0"\r\nLogOptions="LogBrief"\r\nMsgClassFull="0"\r\nAutoLog=1\r\n[General]\r\nAutomaticTransactions="1"\r\nContinueOnError="0"\r\nXlBridgeTimeout="120"\r\nUseThreads="1"\r\nDefaultRunLogic=uspOVc.657\r\nAutomaticTransactionsPerFunc="0"\r\nFailTransOnErrorMsg="0"\r\nReplay64bit="0"\r\n[Iterations]\r\nRandomMax="90"\r\nRandomMin="60"\r\nIterationPace="IterationASAP"\r\nStartEvery="60"\r\nNumOfIterations="1"\r\n[ThinkTime]\r\nOptions=RECORDED\r\nFactor="1"\r\nThinkTimeRandomLow="50"\r\nThinkTimeRandomHigh="150"\r\nLimit="1"\r\nLimitFlag="0"\r\n
 ConfigUsp=[Profile Actions]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="Profile Actions"\r\nProfile Actions name=vuser_init,Action,vuser_end\r\n[RunLogicEndRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicEndRoot"\r\nMercIniTreeSons="vuser_end"\r\nName="End"\r\nRunLogicActionOrder="vuser_end"\r\nRunLogicActionType="VuserEnd"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicEndRoot:vuser_end]\r\nMercIniTreeFather="RunLogicEndRoot"\r\nMercIniTreeSectionName="vuser_end"\r\nName="vuser_end"\r\nRunLogicActionType="VuserEnd"\r\nRunLogicObjectKind="Action"\r\n[RunLogicErrorHandlerRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicErrorHandlerRoot"\r\nMercIniTreeSons="vuser_errorhandler"\r\nName="ErrorHandler"\r\nRunLogicActionOrder="vuser_errorhandler"\r\nRunLogicActionType="VuserErrorHandler"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicErrorHandlerRoot:vuser_errorhandler]\r\nMercIniTreeFather="RunLogicErrorHandlerRoot"\r\nMercIniTreeSectionName="vuser_errorhandler"\r\nName="vuser_errorhandler"\r\nRunLogicActionType="VuserErrorHandler"\r\nRunLogicObjectKind="Action"\r\n[RunLogicInitRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicInitRoot"\r\nMercIniTreeSons="vuser_init"\r\nName="Init"\r\nRunLogicActionOrder="vuser_init"\r\nRunLogicActionType="VuserInit"\r\nRunLogicNumOfIterations="1"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicInitRoot:vuser_init]\r\nMercIniTreeFather="RunLogicInitRoot"\r\nMercIniTreeSectionName="vuser_init"\r\nName="vuser_init"\r\nRunLogicActionType="VuserInit"\r\nRunLogicObjectKind="Action"\r\n[RunLogicRunRoot]\r\nMercIniTreeFather=""\r\nMercIniTreeSectionName="RunLogicRunRoot"\r\nMercIniTreeSons="Action"\r\nName="Run"\r\nRunLogicActionOrder="Action"\r\nRunLogicActionType="VuserRun"\r\nRunLogicNumOfIterations="3"\r\nRunLogicObjectKind="Group"\r\nRunLogicRunMode="Sequential"\r\n[RunLogicRunRoot:Action]\r\nMercIniTreeFather="RunLogicRunRoot"\r\nMercIniTreeSectionName="Action"\r\nName="Action"\r\nRunLogicActionType="VuserRun"\r\nRunLogicObjectKind="Action"\r\n
 Param=
 TDPath=
@@ -295,6 +304,7 @@ SEED_NUM=0
 GroupParam=
 Enabled=1
 EmulatedLocation=None
+NVAnalytics=0
 }
 }
 
@@ -348,6 +358,7 @@ SEED_NUM=0
 GroupParam=
 Enabled=1
 EmulatedLocation=None
+NVAnalytics=0
 }
 }
 
@@ -401,6 +412,7 @@ SEED_NUM=0
 GroupParam=
 Enabled=1
 EmulatedLocation=None
+NVAnalytics=0
 }
 }
 }
@@ -419,8 +431,8 @@ GraphTop=0
 GraphLeft=225
 TreeViewTop=0
 TreeViewHeight=220
-LegenedTop=350
-LegenedWidth=1700
+LegenedTop=147
+LegenedWidth=1437
 HostNameIdMap=
 LegenedLeft=0
 DisplayMeasDialog=1
@@ -502,7 +514,7 @@ AnySubPathAtStart=-1
 OpenChildGraph=0
 KeepLegendSort=0
 LegendSortDirection=1
-LegendUserMovedColumn=-1
+LegendUserMovedColumn=0
 XAxisLabelsStyle=RelativeTime
 Is_On_Panel=1
 SampleRate=5
@@ -519,7 +531,7 @@ OverlayGraph=0
 Auto_Y_Scale=1
 DefaultMsrAutoScale=0
 Granularities=-1
-MeasurementCount=8
+MeasurementCount=7
 Measurement_0=|||0|||0|||1|||Not_In_Use|||0|||-1|||
 MeasurementFullPath_0=Running
 Measurement_1=|||3|||0|||1|||Not_In_Use|||0|||-1|||
@@ -534,8 +546,6 @@ Measurement_5=|||13|||0|||1|||Not_In_Use|||0|||-1|||es_tr_runtime_vusers
 MeasurementFullPath_5=Error
 Measurement_6=|||3|||0|||1|||Not_In_Use|||0|||-1|||es_tr_runtime_vusers
 MeasurementFullPath_6=Finished
-Measurement_7=|||13|||0|||1|||Not_In_Use|||0|||-1|||
-MeasurementFullPath_7=Error
 Description=Displays the number of Vusers that executed Vuser scripts, and their status, during each second of a load test. This graph is useful for determining the Vuser load on your server at any given moment.
 [2]
 MeasurementsDelimiter=|||
@@ -4634,7 +4644,7 @@ ItemsNumber=IntV1|0
 }
 
 {ScenarioDiagnostics
-XMLData=<Mediators distribution = "1" enabled= "1" ><Mediator type= "SARM" enabled= "0" ><Machine name = "" type = "Win2000" ><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY></TOPOLOGY></Mediator><Mediator type= "OracleDB" enabled= "0" ><Machine name = "" type = "Win2000" ><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY></TOPOLOGY></Mediator><Mediator type= "WebPage" enabled= "1" ></Mediator><Mediator type= "J2EE" enabled= "0" ></Mediator><Mediator type= "SiebelDB" enabled= "0" ><Machine name = "" type = "Win2000" ><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY></TOPOLOGY></Mediator><Mediator type="SAP" enabled="0"><Machine name="" type="Win2000"><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY><SERVER host="" instance="" RouterString=""><LOGIN username="" password="57598f20e" client_num=""/></SERVER></TOPOLOGY></Mediator></Mediators>
+XMLData=<Mediators distribution = "1" enabled= "1" ><Mediator type= "SARM" enabled= "0" ><Machine name = "" type = "Win2000" ><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY></TOPOLOGY></Mediator><Mediator type= "OracleDB" enabled= "0" ><Machine name = "" type = "Win2000" ><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY></TOPOLOGY></Mediator><Mediator type= "WebPage" enabled= "1" ></Mediator><Mediator type= "J2EE" enabled= "0" ></Mediator><Mediator type= "SiebelDB" enabled= "0" ><Machine name = "" type = "Win2000" ><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY></TOPOLOGY></Mediator><Mediator type="SAP" enabled="0"><Machine name="" type="Win2000"><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY><SERVER host="" instance="" RouterString=""><LOGIN username="" password="587350eae" client_num=""/></SERVER></TOPOLOGY></Mediator></Mediators>
 }
 
 {ScenarioAlertsConfig
@@ -4651,7 +4661,7 @@ XMLData=<Mediators distribution = "1" enabled= "1" ><Mediator type= "SARM" enabl
       <StartModes>
         <Immediately />
         <DelayAfterLTStart>0</DelayAfterLTStart>
-        <StartAt>2016-06-09T08:32:58.9131377-07:00</StartAt>
+        <StartAt>2016-06-09T18:32:58.9131377+03:00</StartAt>
       </StartModes>
     </StartMode>
     <Scheduler ID="1">
@@ -4804,7 +4814,7 @@ XMLData=<Mediators distribution = "1" enabled= "1" ><Mediator type= "SARM" enabl
 }
 
 {ScenarioSLAConfig
-<?xml version="1.0" encoding="UTF-8"?><SLA Version="1.0"><TxList><Tx>TE_connect</Tx><Tx>next_bool</Tx><Tx>vuser_end_Transaction</Tx><Tx>TE_disconnect</Tx><Tx>print_to_file</Tx><Tx>open_file</Tx><Tx>vuser_init_Transaction</Tx><Tx>win_runner</Tx><Tx>all_cgi</Tx><Tx>navigate</Tx><Tx>TE_find_text</Tx><Tx>delete_file</Tx><Tx>Action1_Transaction</Tx><Tx>all_links</Tx><Tx>Action_Transaction</Tx></TxList><SLARules><TrackingPeriodType>Default</TrackingPeriodType><TrackingPeriodValue></TrackingPeriodValue><TrackingPeriodTimeScale></TrackingPeriodTimeScale><RulesGroup Type="SimpleLoad"><Name>Load Based Rules</Name></RulesGroup><RulesGroup Type="Simple"><Name>Simple Rules</Name><SimpleRule Name="total_throughput"><Measurement>total_throughput</Measurement><AggFunction>Total</AggFunction><CalcDirection>greater_than_equal</CalcDirection><Value>1555000</Value></SimpleRule><SimpleRule Name="average_throughput"><Measurement>average_throughput</Measurement><AggFunction>Average</AggFunction><CalcDirection>greater_than_equal</CalcDirection><Value>150000</Value></SimpleRule></RulesGroup></SLARules></SLA>
+<?xml version="1.0" encoding="UTF-8"?><SLA Version="1.0"><TxList><Tx>TE_connect</Tx><Tx>next_bool</Tx><Tx>vuser_end_Transaction</Tx><Tx>TE_disconnect</Tx><Tx>print_to_file</Tx><Tx>open_file</Tx><Tx>vuser_init_Transaction</Tx><Tx>win_runner</Tx><Tx>all_cgi</Tx><Tx>navigate</Tx><Tx>TE_find_text</Tx><Tx>delete_file</Tx><Tx>Action1_Transaction</Tx><Tx>all_links</Tx><Tx>Action_Transaction</Tx></TxList><SLARules><TrackingPeriodType>Default</TrackingPeriodType><TrackingPeriodValue></TrackingPeriodValue><TrackingPeriodTimeScale></TrackingPeriodTimeScale><RulesGroup Type="SimpleLoad"><Name>Load Based Rules</Name></RulesGroup><RulesGroup Type="Simple"><Name>Simple Rules</Name><SimpleRule Name="total_throughput"><Measurement>total_throughput</Measurement><AggFunction>Total</AggFunction><CalcDirection>greater_than_equal</CalcDirection><Value>1555000</Value></SimpleRule><SimpleRule Name="average_throughput"><Measurement>average_throughput</Measurement><AggFunction>Average</AggFunction><CalcDirection>greater_than_equal</CalcDirection><Value>1500000</Value></SimpleRule></RulesGroup></SLARules></SLA>
 }
 
 {ScenarioSEVConfig
